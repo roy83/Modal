@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+html {
+  display: table;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  background: url("https://raw.githubusercontent.com/DevTips/splash-page-and-modal/master/andrew-marks/images/background.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+.wrapper {
+  display: inline-block;
+  margin-right: -20%;
+  text-align: left; }
+  .wrapper h1 {
+    overflow: hidden;
+    margin: 0;
+    font-size: 5em;
+    font-weight: 700; }
+    .wrapper h1 span {
+      display: inline-block;
+      float: left;
+      clear: both;
+      margin-bottom: 10px;
+      padding: 0 20px;
+      color: #f8d902;
+      background: #000; }
+  .wrapper button {
+    padding: 0 20px;
+    border: none;
+    font-size: 2em;
+    color: #000;
+    background: #f8d902;
+    transition: all 200ms ease-in-out; }
+    .wrapper button:hover {
+      background: #000;
+      color: #f8d902; }
+
+.modal {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(248, 217, 2, 0.9); }
+
+.box-wrapper {
+  display: table-cell;
+  vertical-align: middle; }
+  .box-wrapper .box {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    max-width: 600px;
+    min-width: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }
+    .box-wrapper .box .top {
+      height: 263px; }
+    .box-wrapper .box .content, .box-wrapper .box .image {
+      float: left; }
+    .box-wrapper .box .content {
+      width: 60%;
+      padding: 20px; }
+      .box-wrapper .box .content h2 {
+        margin-top: 0; }
+    .box-wrapper .box .image {
+      width: 40%; }
+    .box-wrapper .box .close {
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      color: #f8d902;
+      font-weight: 700;
+      background: #000;
+      cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,112 @@
+$yellow: #f8d902
+$dark: #000
+
+html
+	box-sizing: border-box
+
+*, *:before, *:after
+	box-sizing: inherit
+
+html, body
+	height: 100%
+	width: 100%
+
+html
+	display: table
+	font-family: 'Open Sans Condensed', sans-serif
+	font-size: 1em
+	font-weight: 300
+	background: url('https://raw.githubusercontent.com/DevTips/splash-page-and-modal/master/andrew-marks/images/background.jpg') no-repeat center center
+	background-size: cover
+	background-attachment: fixed
+
+body
+	display: table-cell
+	vertical-align: middle
+	text-align: center
+
+.wrapper
+	display: inline-block
+	margin-right: -20%
+	text-align: left
+
+	h1
+		overflow: hidden
+		margin: 0
+		font-size: 5em
+		font-weight: 700
+
+		span
+			display: inline-block
+			float: left
+			clear: both
+			margin-bottom: 10px
+			padding: 0 20px
+			color: $yellow
+			background: $dark
+
+	button
+		padding: 0 20px
+		border: none
+		font-size: 2em
+		color: $dark
+		background: $yellow
+		transition: all 200ms ease-in-out
+
+		&:hover
+			background: $dark
+			color: $yellow
+
+.modal
+	display: table
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	height: 100%
+	width: 100%
+	background: rgba($yellow, .9)
+
+.box-wrapper
+	display: table-cell
+	vertical-align: middle
+
+	.box
+		position: relative
+		display: inline-block
+		width: 50%
+		max-width: 600px
+		min-width: 300px
+		overflow-y: auto
+		overflow-x: hidden
+		background: #fff
+		box-shadow: 0 0 20px rgba(0,0,0,.7)
+
+		.top
+			height: 263px
+
+		.content, .image
+			float: left
+
+		.content
+			width: 60%
+			padding: 20px
+
+			h2
+				margin-top: 0
+
+		.image
+			width: 40%
+
+		.close
+			position: absolute
+			right: 2px
+			top: 2px
+			width: 30px
+			height: 30px
+			line-height: 30px
+			color: $yellow
+			font-weight: 700
+			background: $dark
+			cursor: pointer
