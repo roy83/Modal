@@ -60,7 +60,6 @@ body
 			color: $light
 
 .modal
-	display: table
 	position: absolute
 	top: 0
 	left: 0
@@ -70,49 +69,47 @@ body
 	width: 100%
 	background: rgba($light, .9)
 
-.box-wrapper
-	display: table-cell
-	vertical-align: middle
+.box
+	height: 320px
+	width: 600px
+	position: relative
+	top: 50%
+	left: 50%
+	margin: -160px 0 0 -300px
+	overflow-y: auto
+	overflow-x: hidden
+	background: #fff
+	box-shadow: 0 0 20px rgba(0,0,0,.7)
 
-	.box
-		position: relative
-		display: inline-block
-		height: 320px
-		width: 600px
-		overflow-y: auto
-		overflow-x: hidden
-		background: #fff
-		box-shadow: 0 0 20px rgba(0,0,0,.7)
+	.top
+		height: 260px
 
-		.top
-			height: 260px
+	.content, .image
+		float: left
 
-		.content, .image
-			float: left
+	.content
+		width: 60%
+		padding: 20px
 
-		.content
-			width: 60%
-			padding: 20px
+		h2
+			margin-top: 0
+			border-bottom: 1px solid rgba($dark, .2)
 
-			h2
-				margin-top: 0
-				border-bottom: 1px solid rgba($dark, .2)
+	.image
+		height: inherit
+		width: 40%
 
-		.image
-			height: inherit
-			width: 40%
-
-		.close
-			position: absolute
-			right: 2px
-			top: 2px
-			width: 30px
-			height: 30px
-			line-height: 30px
-			color: $dark
-			font-weight: 700
-			background: $light
-			cursor: pointer
+	.close
+		position: absolute
+		right: 2px
+		top: 2px
+		width: 30px
+		height: 30px
+		line-height: 30px
+		color: $dark
+		font-weight: 700
+		background: $light
+		cursor: pointer
 	
 	.form
 		height: 60px
@@ -131,6 +128,7 @@ body
 		input[type="submit"]
 			width: 120px 
 			margin: 10px 10px 10px 0
+			background: $light
 	
 img
 	height: 260px
