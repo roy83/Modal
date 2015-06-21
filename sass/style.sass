@@ -1,5 +1,5 @@
-$yellow: #f8d902
-$dark: #000
+$light: #D9C5AD
+$dark: #1C2329
 
 html
 	box-sizing: border-box
@@ -16,7 +16,7 @@ html
 	font-family: 'Open Sans Condensed', sans-serif
 	font-size: 1em
 	font-weight: 300
-	background: url('https://raw.githubusercontent.com/DevTips/splash-page-and-modal/master/andrew-marks/images/background.jpg') no-repeat center center
+	background: url('../img/bg.jpg') no-repeat center center
 	background-size: cover
 	background-attachment: fixed
 
@@ -27,7 +27,7 @@ body
 
 .wrapper
 	display: inline-block
-	margin-right: -20%
+	margin-left: 20%
 	text-align: left
 
 	h1
@@ -41,8 +41,9 @@ body
 			float: left
 			clear: both
 			margin-bottom: 10px
-			padding: 0 20px
-			color: $yellow
+			padding: 0px 20px
+			color: $light
+			line-height: 1.1
 			background: $dark
 
 	button
@@ -50,12 +51,12 @@ body
 		border: none
 		font-size: 2em
 		color: $dark
-		background: $yellow
+		background: $light
 		transition: all 200ms ease-in-out
 
 		&:hover
 			background: $dark
-			color: $yellow
+			color: $light
 
 .modal
 	display: table
@@ -66,7 +67,7 @@ body
 	bottom: 0
 	height: 100%
 	width: 100%
-	background: rgba($yellow, .9)
+	background: rgba($light, .9)
 
 .box-wrapper
 	display: table-cell
@@ -106,7 +107,17 @@ body
 			width: 30px
 			height: 30px
 			line-height: 30px
-			color: $yellow
+			color: $light
 			font-weight: 700
 			background: $dark
 			cursor: pointer
+	
+	.form
+		background: $dark
+
+		input
+			display: inline-block
+	
+img
+	height: 263px
+	width: auto

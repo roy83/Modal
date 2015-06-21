@@ -13,7 +13,7 @@ html {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1em;
   font-weight: 300;
-  background: url("https://raw.githubusercontent.com/DevTips/splash-page-and-modal/master/andrew-marks/images/background.jpg") no-repeat center center;
+  background: url("../img/bg.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed; }
 
@@ -24,7 +24,7 @@ body {
 
 .wrapper {
   display: inline-block;
-  margin-right: -20%;
+  margin-left: 20%;
   text-align: left; }
   .wrapper h1 {
     overflow: hidden;
@@ -36,19 +36,20 @@ body {
       float: left;
       clear: both;
       margin-bottom: 10px;
-      padding: 0 20px;
-      color: #f8d902;
-      background: #000; }
+      padding: 0px 20px;
+      color: #D9C5AD;
+      line-height: 1.1;
+      background: #1C2329; }
   .wrapper button {
     padding: 0 20px;
     border: none;
     font-size: 2em;
-    color: #000;
-    background: #f8d902;
+    color: #1C2329;
+    background: #D9C5AD;
     transition: all 200ms ease-in-out; }
     .wrapper button:hover {
-      background: #000;
-      color: #f8d902; }
+      background: #1C2329;
+      color: #D9C5AD; }
 
 .modal {
   display: table;
@@ -59,7 +60,7 @@ body {
   bottom: 0;
   height: 100%;
   width: 100%;
-  background: rgba(248, 217, 2, 0.9); }
+  background: rgba(217, 197, 173, 0.9); }
 
 .box-wrapper {
   display: table-cell;
@@ -92,9 +93,17 @@ body {
       width: 30px;
       height: 30px;
       line-height: 30px;
-      color: #f8d902;
+      color: #D9C5AD;
       font-weight: 700;
-      background: #000;
+      background: #1C2329;
       cursor: pointer; }
+  .box-wrapper .form {
+    background: #1C2329; }
+    .box-wrapper .form input {
+      display: inline-block; }
+
+img {
+  height: 263px;
+  width: auto; }
 
 /*# sourceMappingURL=style.css.map */
