@@ -54,6 +54,7 @@ body {
 
 .modal {
   display: none;
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -72,13 +73,13 @@ body {
   position: relative;
   top: 50%;
   left: 50%;
-  margin: -160px 0 0 -300px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  margin: -460px 0 0 -300px;
   background: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }
   .box .top {
-    height: 260px; }
+    height: 260px;
+    overflow-x: hidden;
+    overflow-y: scroll; }
   .box .content, .box .image {
     float: left; }
   .box .content {
@@ -92,14 +93,12 @@ body {
     width: 40%; }
   .box .close {
     position: absolute;
-    right: 2px;
-    top: 2px;
+    right: -30px;
+    top: -30px;
     width: 30px;
     height: 30px;
     line-height: 30px;
-    color: #1C2329;
     font-weight: 700;
-    background: #D9C5AD;
     cursor: pointer; }
   .box .form {
     height: 60px;
