@@ -13,6 +13,7 @@ html {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1em;
   font-weight: 300;
+  color: #1C2329;
   background: url("../img/bg.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed; }
@@ -68,23 +69,24 @@ body {
   .box-wrapper .box {
     position: relative;
     display: inline-block;
-    width: 50%;
-    max-width: 600px;
-    min-width: 300px;
+    height: 320px;
+    width: 600px;
     overflow-y: auto;
     overflow-x: hidden;
     background: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }
     .box-wrapper .box .top {
-      height: 263px; }
+      height: 260px; }
     .box-wrapper .box .content, .box-wrapper .box .image {
       float: left; }
     .box-wrapper .box .content {
       width: 60%;
       padding: 20px; }
       .box-wrapper .box .content h2 {
-        margin-top: 0; }
+        margin-top: 0;
+        border-bottom: 1px solid rgba(28, 35, 41, 0.2); }
     .box-wrapper .box .image {
+      height: inherit;
       width: 40%; }
     .box-wrapper .box .close {
       position: absolute;
@@ -93,17 +95,27 @@ body {
       width: 30px;
       height: 30px;
       line-height: 30px;
-      color: #D9C5AD;
+      color: #1C2329;
       font-weight: 700;
-      background: #1C2329;
+      background: #D9C5AD;
       cursor: pointer; }
   .box-wrapper .form {
+    height: 60px;
     background: #1C2329; }
     .box-wrapper .form input {
-      display: inline-block; }
+      display: block;
+      float: left;
+      padding: 9px 20px;
+      border: none; }
+    .box-wrapper .form input[type="email"] {
+      width: 450px;
+      margin: 10px; }
+    .box-wrapper .form input[type="submit"] {
+      width: 120px;
+      margin: 10px 10px 10px 0; }
 
 img {
-  height: 263px;
+  height: 260px;
   width: auto; }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,6 +16,7 @@ html
 	font-family: 'Open Sans Condensed', sans-serif
 	font-size: 1em
 	font-weight: 300
+	color: $dark
 	background: url('../img/bg.jpg') no-repeat center center
 	background-size: cover
 	background-attachment: fixed
@@ -76,16 +77,15 @@ body
 	.box
 		position: relative
 		display: inline-block
-		width: 50%
-		max-width: 600px
-		min-width: 300px
+		height: 320px
+		width: 600px
 		overflow-y: auto
 		overflow-x: hidden
 		background: #fff
 		box-shadow: 0 0 20px rgba(0,0,0,.7)
 
 		.top
-			height: 263px
+			height: 260px
 
 		.content, .image
 			float: left
@@ -96,8 +96,10 @@ body
 
 			h2
 				margin-top: 0
+				border-bottom: 1px solid rgba($dark, .2)
 
 		.image
+			height: inherit
 			width: 40%
 
 		.close
@@ -107,17 +109,29 @@ body
 			width: 30px
 			height: 30px
 			line-height: 30px
-			color: $light
+			color: $dark
 			font-weight: 700
-			background: $dark
+			background: $light
 			cursor: pointer
 	
 	.form
+		height: 60px
 		background: $dark
 
 		input
-			display: inline-block
+			display: block
+			float: left
+			padding: 9px 20px
+			border: none
+
+		input[type="email"]
+			width: 450px
+			margin: 10px
+
+		input[type="submit"]
+			width: 120px 
+			margin: 10px 10px 10px 0
 	
 img
-	height: 263px
+	height: 260px
 	width: auto
