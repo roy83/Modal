@@ -61,7 +61,7 @@ body
 
 .modal
 	display: none
-	opacity: 0
+	opacity: 0 //for fadeIn effect - changing in script.js
 	position: absolute
 	top: 0
 	left: 0
@@ -70,6 +70,7 @@ body
 	height: 100%
 	width: 100%
 	background: rgba($light, .9)
+	transition: opacity 500ms ease-in-out
 
 .modal.isOpen
 	display: block
@@ -80,9 +81,10 @@ body
 	position: relative
 	top: 50%
 	left: 50%
-	margin: -460px 0 0 -300px
+	margin: -460px 0 0 -300px //for slideDown effect - changing in script.js
 	background: #fff
 	box-shadow: 0 0 20px rgba(0,0,0,.7)
+	transition: margin 500ms ease-in-out
 
 	.top
 		height: 260px
@@ -93,7 +95,7 @@ body
 		float: left
 
 	.content
-		width: 60%
+		width: 350px
 		padding: 20px
 
 		h2
@@ -102,7 +104,11 @@ body
 
 	.image
 		height: inherit
-		width: 40%
+		width: 230px
+		position: absolute
+		top: 0
+		left: 350px
+		overflow: hidden
 
 	.close
 		position: absolute
@@ -136,3 +142,63 @@ body
 img
 	height: 260px
 	width: auto
+
+@media only screen and (max-width: 670px)
+	
+	.wrapper
+		margin-left: 0
+
+		h1
+			font-size: 3em
+
+			span
+				margin-bottom: 10px
+				padding: 0px 20px
+				line-height: 1
+
+		button
+			padding: 0 20px
+			font-size: 1em
+
+	.box
+		height: 100%
+		width: 100%
+		position: relative
+		top: 0
+		left: 0
+		margin: 0
+		box-shadow: none
+
+		.top
+			height: 70%
+
+		.content
+			float: none
+			width: inherit
+
+		.image
+			display: none
+
+		.close
+			position: absolute
+			right: 20px
+			top: 10px
+			color: $light
+			background: $dark
+		
+		.form
+			display: table
+			height: 30%
+			width: 100%
+
+			#form
+				display: table-cell
+				vertical-align: middle
+
+			input[type="email"]
+				width: 70%
+				margin: 0 1% 0 1%
+
+			input[type="submit"]
+				width: 27%
+				margin: 0 1% 0 0

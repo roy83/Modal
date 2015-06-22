@@ -62,7 +62,8 @@ body {
   bottom: 0;
   height: 100%;
   width: 100%;
-  background: rgba(217, 197, 173, 0.9); }
+  background: rgba(217, 197, 173, 0.9);
+  transition: opacity 500ms ease-in-out; }
 
 .modal.isOpen {
   display: block; }
@@ -75,7 +76,8 @@ body {
   left: 50%;
   margin: -460px 0 0 -300px;
   background: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  transition: margin 500ms ease-in-out; }
   .box .top {
     height: 260px;
     overflow-x: hidden;
@@ -83,14 +85,18 @@ body {
   .box .content, .box .image {
     float: left; }
   .box .content {
-    width: 60%;
+    width: 350px;
     padding: 20px; }
     .box .content h2 {
       margin-top: 0;
       border-bottom: 1px solid rgba(28, 35, 41, 0.2); }
   .box .image {
     height: inherit;
-    width: 40%; }
+    width: 230px;
+    position: absolute;
+    top: 0;
+    left: 350px;
+    overflow: hidden; }
   .box .close {
     position: absolute;
     right: -30px;
@@ -119,5 +125,53 @@ body {
 img {
   height: 260px;
   width: auto; }
+
+@media only screen and (max-width: 670px) {
+  .wrapper {
+    margin-left: 0; }
+    .wrapper h1 {
+      font-size: 3em; }
+      .wrapper h1 span {
+        margin-bottom: 10px;
+        padding: 0px 20px;
+        line-height: 1; }
+    .wrapper button {
+      padding: 0 20px;
+      font-size: 1em; }
+
+  .box {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    box-shadow: none; }
+    .box .top {
+      height: 70%; }
+    .box .content {
+      float: none;
+      width: inherit; }
+    .box .image {
+      display: none; }
+    .box .close {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      color: #D9C5AD;
+      background: #1C2329; }
+    .box .form {
+      display: table;
+      height: 30%;
+      width: 100%; }
+      .box .form #form {
+        display: table-cell;
+        vertical-align: middle; }
+      .box .form input[type="email"] {
+        width: 70%;
+        margin: 0 1% 0 1%; }
+      .box .form input[type="submit"] {
+        width: 27%;
+        margin: 0 1% 0 0; } }
 
 /*# sourceMappingURL=style.css.map */
